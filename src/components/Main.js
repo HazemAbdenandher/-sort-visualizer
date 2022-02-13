@@ -38,7 +38,6 @@ const Main = ( {selectedSort}) => {
                 if( compare(min,j,bars) ) {
                     min=j; 
                 } 
-                
             }
             if (min !== i) {
                await swap(min ,i , bars)   
