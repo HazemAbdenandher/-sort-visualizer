@@ -1,13 +1,117 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: "Poppins";
+  color: white;
+}
+body {
+  background-color: #f0effd;
+}
+.App {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+}
+.side-bar {
+  margin-left: 20px;
+  max-width: 15vw;
+  height: 90vh;
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-left: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(91, 91, 249, 1) 0%,
+    rgba(140, 74, 242, 1) 63%
+  );
+}
+h4 {
+  margin-top: 50px;
+  font-weight: lighter;
+  cursor: pointer;
+}
+h4:hover {
+  text-decoration: underline;
+}
+.navigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+.selected-sort {
+  color: #5b5bf9;
+}
+.icons {
+  display: flex;
+  gap: 20px;
+  width: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon {
+  color: #5b5bf9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.icon:hover {
+  color: white;
+}
+.btn {
+  border: none;
+  display: flex;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+.btn:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(91, 91, 249, 1) 0%,
+    rgba(140, 74, 242, 1) 63%
+  );
+}
+
+.graph {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  width: 1000px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 1rem;
+  border-bottom: 2px solid #5b5bf9;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.bar {
+  display: flex;
+  align-items: flex-start;
+  flex: 0.5;
+  margin: 1px;
+  resize: horizontal;
+  position: relative;
+  transition: all 0.4s ease-in;
+  background: linear-gradient(0deg, #5b5bf9 0%, #c7a5f9 80%);
+}
+.selected {
+  background: linear-gradient(0deg, #d74142 0%, #ebb1b0 80%);
 }
