@@ -2,11 +2,10 @@
 
 const Main = ( {selectedSort}) => {
 
-    
-   
+    var id
     function delay(delayInms) {
         return new Promise(resolve => {
-          setTimeout(() => {
+            id=  setTimeout(() => {
             resolve(2);
           }, delayInms);
         });
@@ -69,29 +68,36 @@ const Main = ( {selectedSort}) => {
     }
     
 
-    const sorting = ()=>{
+    const sorting = async ()=>{
         const bars = document.querySelectorAll(".bar")
-        switch (selectedSort) {
-            case "Bubble Sort":
-                BubbleSort(bars)
-               break;
-            case "Insertion Sort":
+            switch (selectedSort) {
+                case "Bubble Sort":
+                    BubbleSort(bars)
                 break;
-            case "Selection Sort":
-                selectionSort(bars)
+                case "Insertion Sort":
+                    break;
+                case "Selection Sort":
+                    selectionSort(bars)
+                    break;
+        
+                default:
                 break;
-    
-            default:
-               break;
+            }    
+    }
+    const stopTimeout = ()=>{
+        if(id){
+            clearTimeout(id)
+            console.log(document.querySelectorAll(".bar"))
         }
     }
+
     return ( 
         <div className="main">      
             <div className="graph" id="graph"></div>
             <div className="navigation">
                 <h2 className="selected-sort" >{selectedSort}</h2>
                 <div className="icons">
-                    <button className="btn" ><i className="fas fa-pause icon"></i></button>
+                    <button className="btn" onClick={stopTimeout} ><i className="fas fa-pause icon"></i></button>
                     <button className="btn" onClick={sorting}><i className="fas fa-play icon"></i></button>
                 </div>
             </div>
