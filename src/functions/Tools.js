@@ -1,9 +1,9 @@
-export const createArray = () => {
+export const createArray = (size) => {
   let list = [];
   let min = 1;
   let max = 100;
 
-  for (let i = 0; i < 15; ++i) {
+  for (let i = 0; i < size; ++i) {
     let randomNumber = Math.floor(Math.random() * (max - min + 1) + min);
     list.push(parseInt(randomNumber));
   }
@@ -15,8 +15,8 @@ export const removeAllChildNodes = (parent) => {
     parent.removeChild(parent.firstChild);
   }
 };
-export const createGraph = () => {
-  const list = createArray();
+export const createGraph = (size) => {
+  const list = createArray(size);
   const graph = document.querySelector("#graph");
   if (graph) {
     removeAllChildNodes(graph);

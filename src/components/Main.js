@@ -1,4 +1,4 @@
-import { sorting, stopTimeout } from "../functions/Sorts";
+import { sortAlgorithms } from "../functions/Sorts";
 import { motion } from "framer-motion";
 
 const Main = ({ selectedSort, speed }) => {
@@ -11,6 +11,28 @@ const Main = ({ selectedSort, speed }) => {
       type: "spring",
       stiffness: 50,
     },
+  };
+  var k,
+    play = false;
+  const sort = (selectedSort, speed) => {
+    if (!k) {
+      k = new sortAlgorithms(selectedSort, speed);
+      k.start();
+      k.sorting();
+      play = true;
+    } else {
+      if (!play) {
+        play = true;
+        k.continue();
+        k.sorting();
+      }
+    }
+  };
+  const pause = () => {
+    if (k) {
+      k.stop();
+      play = false;
+    }
   };
   return (
     <motion.div
@@ -26,7 +48,7 @@ const Main = ({ selectedSort, speed }) => {
           <button
             className="btn"
             onClick={() => {
-              stopTimeout();
+              pause();
             }}
           >
             <i className="fas fa-pause icon"></i>
@@ -34,7 +56,7 @@ const Main = ({ selectedSort, speed }) => {
           <button
             className="btn"
             onClick={() => {
-              sorting(selectedSort, speed);
+              sort(selectedSort, speed);
             }}
           >
             <i className="fas fa-play icon"></i>

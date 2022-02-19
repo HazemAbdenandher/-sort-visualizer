@@ -16,6 +16,8 @@ body {
   align-items: center;
 }
 .side-bar {
+  display: flex;
+  flex-direction: column;
   margin-left: 20px;
   max-width: 15vw;
   height: 90vh;
@@ -32,8 +34,11 @@ body {
     rgba(140, 74, 242, 1) 63%
   );
 }
+.title {
+  border-bottom: 1px solid white;
+}
 .set-sort {
-  margin-top: 20px;
+  margin-top: 5px;
   font-weight: lighter;
   cursor: pointer;
   transition: all 0.4s;
@@ -100,8 +105,8 @@ body {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  width: 1000px;
-  height: 400px;
+  width: 80%;
+  height: 300px;
   margin: 0 auto;
   padding: 1rem;
   border-bottom: 2px solid #5b5bf9;
@@ -121,18 +126,97 @@ body {
   background: linear-gradient(0deg, #d74142 0%, #ebb1b0 80%);
 }
 
-/* speed */
-.speed {
-  margin-top: 20px;
+.settings {
+  display: flex;
+  flex-direction: column;
 }
+
 .box {
   background: transparent;
   color: white;
   padding: 2px;
-  width: 80%;
+  max-width: 80%;
   border: none;
+  font-family: "Poppins";
   font-size: 20px;
   box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
   appearance: button;
   outline: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .App {
+    flex-direction: column;
+  }
+  .side-bar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 90vw;
+    max-height: 25vh;
+    margin: 0;
+    padding: 10px;
+  }
+  .settings {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .sorts {
+    display: flex;
+    gap: 10px;
+  }
+  .speed {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .set-sort {
+    font-weight: lighter;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    flex-direction: column;
+  }
+  .side-bar {
+    flex-direction: column;
+    max-width: 90vw;
+    max-height: 25vh;
+    margin: 0;
+    padding: 10px;
+  }
+  .sorts {
+    display: flex;
+    gap: 10px;
+  }
+
+  .speed {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .set-sort {
+    font-weight: lighter;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  * {
+    font-size: small;
+  }
+  .sorts {
+    display: flex;
+  }
+  .set-sort {
+    font-weight: lighter;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
 }
