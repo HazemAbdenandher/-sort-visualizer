@@ -1,6 +1,6 @@
 {
-  "homepage": "https://HazemAbdennadher.github.io/sort-visualizer",
-  "name": "sorting-algo",
+  "homepage": "http://HazemAbdenandher.github.io//sort-visualizer",
+  "name": "sort-visualizer",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
