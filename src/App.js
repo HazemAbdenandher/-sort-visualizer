@@ -12,6 +12,7 @@ function App() {
       tools.createGraph(size);
     }
   }, [selectedSort, size]);
+
   return (
     <div className="App">
       <SideBar

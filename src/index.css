@@ -22,8 +22,7 @@ body {
   max-width: 15vw;
   height: 90vh;
   box-sizing: border-box;
-  padding-top: 20px;
-  padding-left: 20px;
+
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   background: rgb(2, 0, 36);
@@ -35,7 +34,13 @@ body {
   );
 }
 .title {
-  border-bottom: 1px solid white;
+  text-align: center;
+}
+.sorts {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 .set-sort {
   margin-top: 5px;
@@ -49,6 +54,13 @@ body {
 }
 .set-sort:active {
   scale: 0.9;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 .navigation {
   display: flex;
@@ -126,11 +138,6 @@ body {
   background: linear-gradient(0deg, #d74142 0%, #ebb1b0 80%);
 }
 
-.settings {
-  display: flex;
-  flex-direction: column;
-}
-
 .box {
   background: transparent;
   color: white;
@@ -165,6 +172,8 @@ body {
   }
   .sorts {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     gap: 10px;
   }
   .speed {
@@ -186,13 +195,9 @@ body {
   .side-bar {
     flex-direction: column;
     max-width: 90vw;
-    max-height: 25vh;
+    max-height: 40vh;
     margin: 0;
     padding: 10px;
-  }
-  .sorts {
-    display: flex;
-    gap: 10px;
   }
 
   .speed {

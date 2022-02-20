@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 
 const SideBar = ({ setSelectedSort, setSpeed, setSize }) => {
   const sortType = (sort) => {
+    document.getElementById("speed").disabled = false;
     setSelectedSort(sort);
   };
   const SideBarVariants = {
@@ -21,6 +22,7 @@ const SideBar = ({ setSelectedSort, setSpeed, setSize }) => {
       className="side-bar"
     >
       <h2 className="title">SEARCHING ALGORIHMS VISUALISATION</h2>
+     
       <div className="sorts">
         <h3>SORTS:</h3>
         <h4 className="set-sort" onClick={() => sortType("Selection Sort")}>
