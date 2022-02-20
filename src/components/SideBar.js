@@ -44,6 +44,7 @@ const SideBar = ({ setSelectedSort, setSpeed, setSize }) => {
             id="size"
             onChange={(e) => {
               setSize(parseInt(e.target.value));
+              document.getElementById("speed").disabled = false;
             }}
             defaultValue="15"
           >
