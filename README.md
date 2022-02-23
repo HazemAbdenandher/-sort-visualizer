@@ -1,6 +1,6 @@
 # Sort Visualizer
 
-**This is a ReactJs app that visualize 3 types of sorts :**
+**This is a ReactJs app that visualizes 3 types of sorts :**
 
 Sorts           |
 ----------------|
