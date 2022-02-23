@@ -15,6 +15,8 @@ const Main = ({ selectedSort, speed }) => {
   var k,
     play = false;
   const sort = (selectedSort, speed) => {
+    
+    
     if (!k) {
       k = new sortAlgorithms(selectedSort, speed);
       k.start();
@@ -47,19 +49,21 @@ const Main = ({ selectedSort, speed }) => {
         <div className="icons">
           <button
             className="btn"
+            id="pauseBtn"
             onClick={() => {
               pause();
             }}
           >
-            <i className="fas fa-pause icon"></i>
+            <i id="pauseIcon" className="fas fa-pause icon"></i>
           </button>
           <button
             className="btn"
+            id="resumeBtn"
             onClick={() => {
               sort(selectedSort, speed);
             }}
           >
-            <i className="fas fa-play icon"></i>
+            <i id="resumeIcon" className="fas fa-play icon"></i>
           </button>
         </div>
       </div>

@@ -69,6 +69,10 @@ const SideBar = ({ setSelectedSort, setSpeed, setSize }) => {
             <option value="500">2x</option>
           </select>
         </div>
+        <div className="footer">
+        <p>Made With <span>💖</span> By <a href="https://github.com/HazemAbdenandher/" target="noreferrer _blank" className="credits">Hazem Abdennadher</a></p>
+        </div>
+        
       </div>
     </motion.div>
   );
