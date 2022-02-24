@@ -8,5 +8,4 @@ Bubble Sort     |
 Insertion sort  |
 selection sort  |
 
-## Live link: 
-https://hazemabdenandher.github.io/sort-visualizer/
+## [Live Link](https://hazemabdenandher.github.io/sort-visualizer/)
