@@ -70,7 +70,7 @@ const SideBar = ({ setSelectedSort, setSpeed, setSize }) => {
           </select>
         </div>
         <div className="footer">
-        <p>Made With <span>💖</span> By <a href="https://github.com/HazemAbdenandher/" target="noreferrer _blank" className="credits">Hazem Abdennadher</a></p>
+        <p>Made With <span>💖</span> By <a href="https://github.com/c-yrus/" target="noreferrer _blank" className="credits">Hazem Abdennadher</a></p>
         </div>
         
       </div>
