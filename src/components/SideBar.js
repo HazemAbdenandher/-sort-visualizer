@@ -72,6 +72,7 @@ const SideBar = ({ setSelectedSort, setSpeed, setSize }) => {
         <div className="footer">
         <p>Made With <span>💖</span> By <a href="https://github.com/c-yrus/" target="noreferrer _blank" className="credits">Hazem Abdennadher</a></p>
         </div>
+        {/*test*/}
         
       </div>
     </motion.div>
