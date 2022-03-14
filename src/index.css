@@ -153,7 +153,9 @@ body {
   outline: none;
   cursor: pointer;
 }
-
+.box option {
+  background: #b584ff;
+}
 .footer {
   position: absolute;
   bottom: 10px;
