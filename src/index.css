@@ -49,11 +49,11 @@ body {
   transition: all 0.4s;
 }
 .set-sort:hover {
-  scale: 1.1;
+  transform: scale(1.1);
   transform-origin: 0 0;
 }
 .set-sort:active {
-  scale: 0.9;
+  transform: scale(0.9);
 }
 
 .settings {
