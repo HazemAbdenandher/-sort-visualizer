@@ -10,4 +10,5 @@ Bubble Sort     |
 Insertion sort  |
 selection sort  |
 
-https://user-images.githubusercontent.com/67316586/158688292-b57eb4f0-d7ea-4489-a525-078fe1880797.mp4
+
+https://user-images.githubusercontent.com/67316586/158688577-95f753c9-51c8-4ac3-9790-9ab996768628.mp4
