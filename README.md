@@ -1,6 +1,6 @@
 # Sort Visualizer
 
-## [DEMO](https://c-yrus.github.io/sort-visualizer/)
+## [DEMO]([https://c-yrus.github.io/sort-visualizer/](https://hazem-abdennadher.github.io/sort-visualizer/))
 
 **This is a ReactJs app that visualizes 3 types of sorts :**
 
